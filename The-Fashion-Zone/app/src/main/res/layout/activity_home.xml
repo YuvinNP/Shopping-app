@@ -7,8 +7,15 @@
     tools:context=".Home">
 
     <ViewFlipper
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/v_flipper"/>
+        android:id="@+id/v_flipper"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="439dp" />
 </RelativeLayout>

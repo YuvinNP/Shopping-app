@@ -10,7 +10,8 @@ import android.widget.Button;
 
 public class LoginScreen extends AppCompatActivity {
 
-    Button skip;
+    Button skip, register;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,5 +24,14 @@ public class LoginScreen extends AppCompatActivity {
         Intent int1 = new Intent(LoginScreen.this, LoginActivity.class);
 
         startActivity(int1);
+    }
+
+    public void registerPage(View view){
+
+        register = findViewById(R.id.register);
+        Intent int2 = new Intent(LoginScreen.this, Register_User.class);
+
+        startActivity(int2);
+
     }
 }

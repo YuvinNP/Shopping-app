@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.398" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/register"
         android:layout_width="274dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
@@ -35,6 +35,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/transparent_btn"
+        android:onClick="registerPage"
         android:text="@string/sign_up"
         android:textColor="@color/loginColor"
         android:textSize="24sp"
@@ -57,7 +58,7 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="normal|italic"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,21 +67,22 @@
 
     <Button
         android:id="@+id/skipbtn"
-        android:layout_width="74dp"
-        android:layout_height="33dp"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/loginColor"
+        android:background="@drawable/skip_btn"
         android:onClick="skipToNext"
         android:text="@string/skipForNow"
-        android:textColor="@color/loginText"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.971"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/register"
         app:layout_constraintVertical_bias="0.937" />
 
     <TextView
