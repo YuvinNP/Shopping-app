@@ -29,7 +29,7 @@ public class Home_Screen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ViewFlipper v_flipper;
-    Button moveToGents;
+    Button moveToGents, moveToLadies;
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +85,15 @@ public class Home_Screen extends AppCompatActivity
 
         startActivity(intent);
 
+    }
+
+    public void moveToLadies(View V){
+
+        moveToLadies = findViewById(R.id.ladies);
+
+        Intent newIntent = new Intent(Home_Screen.this, MainActivity.class);
+
+        startActivity(newIntent);
     }
     @Override
     public void onBackPressed() {

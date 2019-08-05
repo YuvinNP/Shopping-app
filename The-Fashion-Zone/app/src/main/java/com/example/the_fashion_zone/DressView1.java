@@ -1,5 +1,4 @@
-package com.example.fashion5;
-
+package com.example.the_fashion_zone;
 import android.content.Intent;
 import android.os.Bundle;
 

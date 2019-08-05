@@ -1,5 +1,4 @@
-package com.example.fashion5;
-
+package com.example.the_fashion_zone;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

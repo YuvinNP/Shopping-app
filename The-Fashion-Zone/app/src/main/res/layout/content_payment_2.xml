@@ -92,6 +92,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
                 <RadioButton
                     android:layout_width="222dp"
                     android:layout_height="wrap_content"
@@ -106,6 +109,7 @@
                     android:layout_marginTop="7dp"
                     android:text="  Cash On Delivery" />
 
+                </RadioGroup>
             </LinearLayout>
 
     </LinearLayout>
