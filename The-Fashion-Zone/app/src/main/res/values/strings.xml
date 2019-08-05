@@ -39,6 +39,25 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
 
+<string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_dresses1">Dresses1</string>
+    <string name="title_activity_skirts">Skirts</string>
+    <string name="title_activity_tops">Tops</string>
+    <string name="title_activity_shorts__pants">Shorts_Pants</string>
+    <string name="title_activity_dress_view1">DressView1</string>
+    <string name="title_activity_dress_view2">DressView2</string>
+    <string name="title_activity_dress_view3">DressView3</string>
+    <string name="title_activity_dress_view4">DressView4</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_payment1">Payment1</string>
+    <string name="title_activity_payment_2">Payment_2</string>
+
     <string name="seller_login">LOGIN AS A SELLER</string>
     <string name="seller_register">REGISTER AS A SELLER</string>
     <string name="agreement">By Registering for an Fashion Zone account you agree that you have read and accepted our Memebership Agreement</string>

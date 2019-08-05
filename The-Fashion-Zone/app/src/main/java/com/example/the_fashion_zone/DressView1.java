@@ -22,77 +22,27 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity
+public class DressView1 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Button button1, button2, button3, button4, button5, button6;
-
+    private Button button1, button2;
+    EditText editText;
+    int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dress_view1);
 
-        button1 = (Button) findViewById(R.id.btn_1);
-        button2 = (Button) findViewById(R.id.btn_2);
-        button3 = (Button) findViewById(R.id.btn_3);
-        button4 = (Button) findViewById(R.id.btn_4);
-        button5 = (Button) findViewById(R.id.cartBtn);
-        button6 = (Button) findViewById(R.id.notificationBtn);
+        editText = findViewById(R.id.qtyField);
+
+        editText.setText(0 + "");
+
+        button1 = (Button) findViewById(R.id.btnP5);
+        button2 = (Button) findViewById(R.id.btnP6);
 
         button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDresses1();
-            }
-
-            private void openDresses1() {
-
-                Intent intent1 = new Intent(MainActivity.this, Dresses1.class);
-                startActivity(intent1);
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSkirts();
-            }
-
-            private void openSkirts() {
-
-                Intent intent1 = new Intent(MainActivity.this, Skirts.class);
-                startActivity(intent1);
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTops();
-            }
-
-            private void openTops() {
-
-                Intent intent1 = new Intent(MainActivity.this, Tops.class);
-                startActivity(intent1);
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTops();
-            }
-
-            private void openTops() {
-
-                Intent intent1 = new Intent(MainActivity.this, Shorts_Pants.class);
-                startActivity(intent1);
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openCart();
@@ -100,20 +50,20 @@ public class MainActivity extends AppCompatActivity
 
             private void openCart() {
 
-                Intent intent1 = new Intent(MainActivity.this, Payment.class);
+                Intent intent1 = new Intent(DressView1.this, Payment.class);
                 startActivity(intent1);
             }
         });
 
-        button6.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openNotification();
+                openPayment1();
             }
 
-            private void openNotification() {
+            private void openPayment1() {
 
-                Intent intent1 = new Intent(MainActivity.this, Notification.class);
+                Intent intent1 = new Intent(DressView1.this, Payment1.class);
                 startActivity(intent1);
             }
         });
@@ -137,6 +87,28 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    public void increment(View v){
+
+
+
+        count = Integer.parseInt(editText.getText().toString());
+
+        count=count+1;
+
+        editText.setText(count + "");
+
+    }
+
+    public void decrement(View v){
+
+        editText = findViewById(R.id.qtyField);
+
+        count = Integer.parseInt(editText.getText().toString());
+
+        count=count-1;
+
+        editText.setText(count + "");
+    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -150,7 +122,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.dress_view1, menu);
         return true;
     }
 

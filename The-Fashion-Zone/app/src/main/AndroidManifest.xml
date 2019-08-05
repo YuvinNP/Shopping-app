@@ -28,6 +28,58 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/loginAction" />
+
+<!-- Kaushaluya -->
+<activity android:name=".Thank"></activity>
+        <activity
+            android:name=".Payment_2"
+            android:label="@string/title_activity_payment_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Payment1"
+            android:label="@string/title_activity_payment1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notification"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Payment"
+            android:label="@string/title_activity_payment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DressView4"
+            android:label="@string/title_activity_dress_view4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DressView3"
+            android:label="@string/title_activity_dress_view3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DressView2"
+            android:label="@string/title_activity_dress_view2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DressView1"
+            android:label="@string/title_activity_dress_view1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Shorts_Pants"
+            android:label="@string/title_activity_shorts__pants"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tops"
+            android:label="@string/title_activity_tops"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Skirts"
+            android:label="@string/title_activity_skirts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dresses1"
+            android:label="@string/title_activity_dresses1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".LoginScreen"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">

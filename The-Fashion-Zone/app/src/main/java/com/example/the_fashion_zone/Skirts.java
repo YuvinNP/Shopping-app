@@ -1,6 +1,5 @@
 package com.example.fashion5;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -21,103 +20,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity
+public class Skirts extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    private Button button1, button2, button3, button4, button5, button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        button1 = (Button) findViewById(R.id.btn_1);
-        button2 = (Button) findViewById(R.id.btn_2);
-        button3 = (Button) findViewById(R.id.btn_3);
-        button4 = (Button) findViewById(R.id.btn_4);
-        button5 = (Button) findViewById(R.id.cartBtn);
-        button6 = (Button) findViewById(R.id.notificationBtn);
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDresses1();
-            }
-
-            private void openDresses1() {
-
-                Intent intent1 = new Intent(MainActivity.this, Dresses1.class);
-                startActivity(intent1);
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSkirts();
-            }
-
-            private void openSkirts() {
-
-                Intent intent1 = new Intent(MainActivity.this, Skirts.class);
-                startActivity(intent1);
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTops();
-            }
-
-            private void openTops() {
-
-                Intent intent1 = new Intent(MainActivity.this, Tops.class);
-                startActivity(intent1);
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openTops();
-            }
-
-            private void openTops() {
-
-                Intent intent1 = new Intent(MainActivity.this, Shorts_Pants.class);
-                startActivity(intent1);
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openCart();
-            }
-
-            private void openCart() {
-
-                Intent intent1 = new Intent(MainActivity.this, Payment.class);
-                startActivity(intent1);
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openNotification();
-            }
-
-            private void openNotification() {
-
-                Intent intent1 = new Intent(MainActivity.this, Notification.class);
-                startActivity(intent1);
-            }
-        });
-
+        setContentView(R.layout.activity_skirts);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -150,7 +60,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.skirts, menu);
         return true;
     }
 

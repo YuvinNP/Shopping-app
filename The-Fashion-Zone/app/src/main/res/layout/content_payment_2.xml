@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Payment_2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:showIn="@layout/app_bar_payment_2">
+
+
+    <!-- layout1 -->
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:textSize="15dp"
+           android:textColor="#000000"
+           android:text="    Kaushalya Madushani"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="    105 B, Hospital Road, Ambalantota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="    Sri Lanka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="    +94 717507514"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textAlignment="gravity"
+            android:textSize="17dp"
+            android:textColor="#1a1aff"
+            android:text="CHANGE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal" />
+    <!-- layout2 -->
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:weightSum="1">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:text="     Select Payment Method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:text="  Credit Card / Debit card" />
+
+                <RadioButton
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:text="  Cash On Delivery" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- layout4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <!-- layout3 empty-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:orientation="horizontal" />
+
+    <!-- layout4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FFFF"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="        Total                                   : LKR 2, 500.00 "
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></LinearLayout>
+        <!-- button1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="1">
+
+            <Button
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:id="@+id/btnP5"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3333ff" />
+        </LinearLayout>
+
+        <!-- empty -->
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></LinearLayout>
+        <!-- button2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnP6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3333ff"
+                android:text="Place Order"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <!-- empty -->
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
