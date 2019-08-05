@@ -29,12 +29,29 @@ public class Home_Screen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ViewFlipper v_flipper;
-    Button moveToGents;
+    Button moveToGents, moveToLadies;
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home__screen);
+
+        moveToLadies = (Button) findViewById(R.id.button82);
+
+        moveToLadies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDresses1();
+            }
+
+            private void openDresses1() {
+
+                Intent intent1 = new Intent(Home_Screen.this, MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -84,8 +101,10 @@ public class Home_Screen extends AppCompatActivity
         Intent intent = new Intent(Home_Screen.this, Gents.class);
 
         startActivity(intent);
-
     }
+
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
