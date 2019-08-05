@@ -1,6 +1,5 @@
 package com.example.the_fashion_zone;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -21,31 +20,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ViewFlipper;
 
-public class Home_Screen extends AppCompatActivity
+public class Gents extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ViewFlipper v_flipper;
-    Button moveToGents;
-    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home__screen);
+        setContentView(R.layout.activity_gents);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        int images[] = {R.drawable.shopping1, R.drawable.shopping2, R.drawable.shopping3};
-
-        v_flipper = findViewById(R.id.v_flipper);
-
-        for(int image: images){
-            flipperImages(image);
-        }
-//        FloatingActionButton fab = findViewById(R.id.fab);
+      //  FloatingActionButton fab = findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -62,30 +47,6 @@ public class Home_Screen extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-
-    public void flipperImages(int image){
-
-        ImageView imageView = new ImageView(this);
-        imageView.setBackgroundResource(image);
-
-        v_flipper.addView(imageView);
-        v_flipper.setFlipInterval(2000);
-        v_flipper.setAutoStart(true);
-
-        v_flipper.setInAnimation(this, android.R.anim.slide_in_left);
-
-
-
-    }
-
-    public void moveToGents(View V){
-
-        moveToGents = findViewById(R.id.gents);
-        Intent intent = new Intent(Home_Screen.this, Gents.class);
-
-        startActivity(intent);
-
-    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -99,7 +60,7 @@ public class Home_Screen extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home__screen, menu);
+        getMenuInflater().inflate(R.menu.gents, menu);
         return true;
     }
 

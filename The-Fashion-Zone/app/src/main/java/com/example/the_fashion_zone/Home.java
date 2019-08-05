@@ -14,13 +14,13 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        int images[] = {R.drawable.background, R.drawable.user};
+        //int images[] = {R.drawable.blackpanther, R.drawable.drstrange, R.drawable.google};
 
         v_flipper = findViewById(R.id.v_flipper);
 
-        for(int image: images){
-            flipperImages(image);
-        }
+//        for(int image: images){
+//            flipperImages(image);
+//        }
 
     }
 
@@ -34,7 +34,7 @@ public class Home extends AppCompatActivity {
         v_flipper.setAutoStart(true);
 
         v_flipper.setInAnimation(this, android.R.anim.slide_in_left);
-        v_flipper.setInAnimation(this, android.R.anim.slide_out_right);
+
 
 
     }

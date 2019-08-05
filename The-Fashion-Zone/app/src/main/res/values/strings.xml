@@ -12,7 +12,13 @@
     <string name="telephone">Telephone</string>
     <string name="create_password">Create Password</string>
     <string name="confirm_password">Confirm Password</string>
-
+    <string name="gents">Gents</string>
+    <string name="ladies">Ladies</string>
+    <string name="kids">Kids</string>
+    <string name="accessory">Accessories</string>
+    <string name="click_here">Click Here</string>
+    <string name="gonna_sell_something">Are you gonna sell something?</string>
+    <string name="category">Categories</string>
     <string name="title_activity_home__screen">Home_Screen</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -22,9 +28,18 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
+    <string name="menu_account">My Account</string>
+    <string name="menu_shopping_cart">Shopping Cart</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_gents">gents</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+
+    <string name="seller_login">LOGIN AS A SELLER</string>
+    <string name="seller_register">REGISTER AS A SELLER</string>
+    <string name="agreement">By Registering for an Fashion Zone account you agree that you have read and accepted our Memebership Agreement</string>
 </resources>

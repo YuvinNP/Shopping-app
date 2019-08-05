@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     public void LoginTo(View v){
 
         loginBtn = findViewById(R.id.loginbtn);
-        Intent intent = new Intent(LoginActivity.this, Home.class);
+        Intent intent = new Intent(LoginActivity.this, Home_Screen.class);
 
         startActivity(intent);
     }
