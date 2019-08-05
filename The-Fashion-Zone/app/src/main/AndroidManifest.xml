@@ -20,7 +20,7 @@
             android:label="Register" />
         <activity
             android:name=".Home_Screen"
-            android:label="@string/title_activity_home__screen"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Home"

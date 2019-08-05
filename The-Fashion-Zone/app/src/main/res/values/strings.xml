@@ -42,4 +42,7 @@
     <string name="seller_login">LOGIN AS A SELLER</string>
     <string name="seller_register">REGISTER AS A SELLER</string>
     <string name="agreement">By Registering for an Fashion Zone account you agree that you have read and accepted our Memebership Agreement</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
