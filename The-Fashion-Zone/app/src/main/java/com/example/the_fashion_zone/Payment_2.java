@@ -26,17 +26,18 @@ import android.widget.Button;
 public class Payment_2 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Button button1;
+    private Button placeOrderBtn, cancelBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_2);
 
-        button1 = (Button) findViewById(R.id.btnP6);
+        placeOrderBtn = (Button) findViewById(R.id.btnP6);
+        cancelBtn = (Button) findViewById(R.id.btnP5);
 
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        placeOrderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openThank();
@@ -45,6 +46,19 @@ public class Payment_2 extends AppCompatActivity
             private void openThank() {
 
                 Intent intent1 = new Intent(Payment_2.this, Thank.class);
+                startActivity(intent1);
+            }
+        });
+
+        placeOrderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHome_Screen();
+            }
+
+            private void openHome_Screen() {
+
+                Intent intent1 = new Intent(Payment_2.this, Home_Screen.class);
                 startActivity(intent1);
             }
         });
