@@ -37,7 +37,7 @@ public class Home_Screen extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home__screen);
 
-        moveToLadies = (Button) findViewById(R.id.button82);
+        moveToLadies = (Button) findViewById(R.id.ladies);
 
         moveToLadies.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +59,7 @@ public class Home_Screen extends AppCompatActivity
 
         v_flipper = findViewById(R.id.v_flipper);
 
-        for(int image: images){
+        for (int image : images) {
             flipperImages(image);
         }
 //        FloatingActionButton fab = findViewById(R.id.fab);
@@ -80,7 +80,7 @@ public class Home_Screen extends AppCompatActivity
     }
 
 
-    public void flipperImages(int image){
+    public void flipperImages(int image) {
 
         ImageView imageView = new ImageView(this);
         imageView.setBackgroundResource(image);
@@ -92,10 +92,9 @@ public class Home_Screen extends AppCompatActivity
         v_flipper.setInAnimation(this, android.R.anim.slide_in_left);
 
 
-
     }
 
-    public void moveToGents(View V){
+    public void moveToGents(View V) {
 
         moveToGents = findViewById(R.id.gents);
         Intent intent = new Intent(Home_Screen.this, Gents.class);
@@ -103,11 +102,8 @@ public class Home_Screen extends AppCompatActivity
         startActivity(intent);
     }
 
-<<<<<<< HEAD
 
-
-=======
-    public void moveToLadies(View V){
+    public void moveToLadies(View V) {
 
         moveToLadies = findViewById(R.id.ladies);
 
@@ -115,7 +111,8 @@ public class Home_Screen extends AppCompatActivity
 
         startActivity(newIntent);
     }
->>>>>>> e645cd970e6978bf8c7744da43d0615e6cc5765f
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

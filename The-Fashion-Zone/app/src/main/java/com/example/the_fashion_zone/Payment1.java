@@ -45,7 +45,7 @@ public class Payment1 extends AppCompatActivity
 
             private void openMainActivity() {
 
-                Intent intent1 = new Intent(Payment1.this, MainActivity.class);
+                Intent intent1 = new Intent(Payment1.this, Home_Screen.class);
                 startActivity(intent1);
             }
         });

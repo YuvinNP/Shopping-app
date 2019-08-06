@@ -196,6 +196,18 @@
                 android:layout_marginLeft="87dp"
                 android:background="@drawable/closeicon" />
         </LinearLayout>
+
+
+
+
+
+        
+
+
+
+
+
+
     </LinearLayout>
 
     <LinearLayout

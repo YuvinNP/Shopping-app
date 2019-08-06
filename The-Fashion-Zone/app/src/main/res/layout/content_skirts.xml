@@ -40,7 +40,7 @@
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/d11" />
+                android:background="@drawable/sk1" />
         </LinearLayout>
 
         <!-- empty -->
@@ -59,7 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/d13" />
+                android:background="@drawable/sk2" />
         </LinearLayout>
 
         <!-- empty -->
@@ -98,7 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/b4" />
+                android:background="@drawable/sk3" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,7 +116,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/t1" />
+                android:background="@drawable/sk4" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="20dp"

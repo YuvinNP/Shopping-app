@@ -1,4 +1,5 @@
 package com.example.the_fashion_zone;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,14 +20,54 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class DressView4 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Button button1, button2;
+    EditText editText;
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dress_view4);
+
+        editText = findViewById(R.id.qtyField);
+
+        editText.setText(0 + "");
+
+        button1 = (Button) findViewById(R.id.btnP11);
+        button2 = (Button) findViewById(R.id.btnP12);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCart();
+            }
+
+            private void openCart() {
+
+                Intent intent1 = new Intent(DressView4.this, Payment.class);
+                startActivity(intent1);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPayment1();
+            }
+
+            private void openPayment1() {
+
+                Intent intent1 = new Intent(DressView4.this, Payment1.class);
+                startActivity(intent1);
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 //        FloatingActionButton fab = findViewById(R.id.fab);

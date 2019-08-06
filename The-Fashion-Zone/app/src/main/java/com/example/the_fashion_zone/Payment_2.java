@@ -58,7 +58,7 @@ public class Payment_2 extends AppCompatActivity
 
             private void openHome_Screen() {
 
-                Intent intent1 = new Intent(Payment_2.this, Home_Screen.class);
+                Intent intent1 = new Intent(Payment_2.this, Thank.class);
                 startActivity(intent1);
             }
         });
