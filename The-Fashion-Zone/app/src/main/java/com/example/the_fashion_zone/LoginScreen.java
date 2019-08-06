@@ -21,7 +21,7 @@ public class LoginScreen extends AppCompatActivity {
     public void skipToNext(View v){
 
         skip = findViewById(R.id.skipbtn);
-        Intent int1 = new Intent(LoginScreen.this, LoginActivity.class);
+        Intent int1 = new Intent(LoginScreen.this, Home_Screen.class);
 
         startActivity(int1);
     }
@@ -34,4 +34,6 @@ public class LoginScreen extends AppCompatActivity {
         startActivity(int2);
 
     }
+
+
 }

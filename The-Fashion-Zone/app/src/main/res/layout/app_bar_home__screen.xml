@@ -70,13 +70,14 @@
             android:onClick="moveToGents" />
 
         <Button
-            android:id="@+id/button82"
+            android:id="@+id/ladies"
             android:layout_width="119dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="@drawable/women" />
+            android:background="@drawable/women"
+            android:onClick="moveToLadies" />
     </LinearLayout>
 
     <LinearLayout

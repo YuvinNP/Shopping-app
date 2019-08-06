@@ -63,7 +63,7 @@
                     android:background="@drawable/mensshirt" />
 
                 <Button
-                    android:id="@+id/button82"
+                    android:id="@+id/ladies"
                     android:layout_width="92dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="40dp"

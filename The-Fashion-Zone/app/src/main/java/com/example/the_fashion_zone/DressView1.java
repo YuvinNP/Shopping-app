@@ -1,5 +1,8 @@
 package com.example.the_fashion_zone;
+<<<<<<< HEAD
 
+=======
+>>>>>>> e645cd970e6978bf8c7744da43d0615e6cc5765f
 import android.content.Intent;
 import android.os.Bundle;
 

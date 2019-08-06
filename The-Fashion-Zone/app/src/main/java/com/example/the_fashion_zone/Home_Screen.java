@@ -103,8 +103,19 @@ public class Home_Screen extends AppCompatActivity
         startActivity(intent);
     }
 
+<<<<<<< HEAD
 
 
+=======
+    public void moveToLadies(View V){
+
+        moveToLadies = findViewById(R.id.ladies);
+
+        Intent newIntent = new Intent(Home_Screen.this, MainActivity.class);
+
+        startActivity(newIntent);
+    }
+>>>>>>> e645cd970e6978bf8c7744da43d0615e6cc5765f
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
